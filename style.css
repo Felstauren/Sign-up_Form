@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: "Lato", sans-serif;
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+.blank {
+    background-color:rgb(245,245,245);
+    width: 70vw;
+
+}
+
+.container .img img {
+    height: 99.99lvh;
+}
+
+
+
+
+.absolute {
+    position: absolute;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 2.2rem;
+}
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 30vh;
+}
+
+
+
+
+
+.red {
+    color: red;
+}
