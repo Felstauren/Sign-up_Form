@@ -1,3 +1,9 @@
+@font-face {
+    font-family: Norse;
+    src: url(./font/Norse-Bold.otf);
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -36,12 +42,6 @@
     height: 20vh;
 }
 
-
-.absolute img {
-    width: 40px;
-    height: 200px;
-}
-
 p {
     font-size: 1.2rem;
     font-weight: bold;
@@ -66,24 +66,25 @@ p {
 }
 
 
-.odin-font {
-    font-family: Norse Bold;
-    src: "./font/Norse-Bold.otf";
-    font-size: 200px;
-}
-
-
 .transparent {
-    opacity: 0.2;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.transparent > * {
-    opacity: 1;
+
+.transparent span {
+    font-size: 100px;
+    color: white;
+    font-family: Norse;
+    margin-left: 20px;
 }
 
 
-
+.transparent img {
+    height: 400px;
+}
 
 
 .userInput {
@@ -129,3 +130,77 @@ input:invalid {
 input:valid {
     border: green 1px solid ;
 }
+
+.labels input:focus {
+    border: 1px solid blue;
+    box-shadow: inset;
+}
+
+
+.btnCreate {
+    position: relative;
+    top: 32vh;
+    left: 14vw;
+}
+
+.btnCreate button {
+    background-color: darkorange;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 5%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    color: white;
+    font-size: large;
+}
+
+.btnCreate button:hover {
+    cursor: pointer;
+}
+
+
+.login {
+    position: relative;
+    top: 35vh;
+    left: 14vw;
+}
+
+.login p {
+    font-size: 15px;
+}
+
+.login a {
+    color: darkorange;
+}
+
+.login a:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+.typewriter  {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 13% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }

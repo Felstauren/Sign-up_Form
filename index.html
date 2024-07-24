@@ -14,8 +14,8 @@
         <div class="img">
             <img src="./img/istockphoto-1822651812-1024x1024.jpg" alt="matterhorn">
             <div class="absolute transparent">
-                <img src="./img/odin-lined.png" alt="Odin Logo">
-                <p class="odin-font">Odin</p>
+                <img src="./img/odin-lined.png" alt="Odin Logo" style="width: 120px; height: auto;">
+                <span>Odin</span>
             </div>
         </div>
         <div class="blank">
@@ -25,7 +25,7 @@
                 <p class=""> You know you want to. </p>
             </div>
             <div class="userInput">
-                <p class="text-2">Let's do this!</p>
+                <p class="text-2 typewriter">Let's do this!</p>
                 <div class="labels">
                     <form action="" method="post">
                         <label for="FIRST_NAME">*FIRST NAME</label>
@@ -44,24 +44,28 @@
 
                     <form action="" method="post">
                         <label for="PHONE_NUMBER">*PHONE NUMBER</label>
-                        <input type="number" name="PHONE_NUMBER" id="PHONE_NUMBER" required>
+                        <input type="number" name="PHONE_NUMBER" id="PHONE_NUMBER" required pattern="[+]{1}[0-9]{15}" minlength="15" maxlength="15">
                     </form>
 
                     <form action="" method="post">
                         <label for="PASSWORD">*PASSWORD</label>
-                        <input type="password" name="PASSWORD" id="PASSWORD" required>
+                        <input type="password" name="PASSWORD" id="PASSWORD" required minlength="5">
                     </form>
 
                     <form action="" method="post">
                         <label for="CONFIRM_PASSWORD">*CONFIRM_PASSWORD</label>
-                        <input type="password" name="CONFIRM_PASSWORD" id="CONFIRM_PASSWORD" required>
+                        <input type="password" name="CONFIRM_PASSWORD" id="CONFIRM_PASSWORD" required minlength="5">
                     </form>
 
 
                 </div>
             </div>
-            <div class="btnCreate"></div>
-            <div class="login"></div>
+            <div class="btnCreate">
+                <button type="submit">Create Account</button>
+            </div>
+            <div class="login">
+                <p>Already have an account? <a>Log in</a></p>
+            </div>
         </div>
     </div>
 </body>
