@@ -23,11 +23,23 @@
     height: 99.99lvh;
 }
 
-
+.img img {
+    width: 33vw;
+}
 
 
 .absolute {
     position: absolute;
+    z-index: 1;
+    width: 32vw;
+    top: 20vh;
+    height: 20vh;
+}
+
+
+.absolute img {
+    width: 40px;
+    height: 200px;
 }
 
 p {
@@ -42,7 +54,7 @@ p {
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: 30vh;
+    top: 20vh;
 }
 
 
@@ -51,4 +63,69 @@ p {
 
 .red {
     color: red;
+}
+
+
+.odin-font {
+    font-family: Norse Bold;
+    src: "./font/Norse-Bold.otf";
+    font-size: 200px;
+}
+
+
+.transparent {
+    opacity: 0.2;
+    background-color: black;
+}
+
+.transparent > * {
+    opacity: 1;
+}
+
+
+
+
+
+.userInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 27vh;
+}
+
+
+.labels {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 40vw;
+    margin-top: 4vh;
+    
+}
+
+.labels>form {
+    margin-top: 2vh;
+}
+
+input, label {
+    display:block;
+}
+
+.text-2 {
+    position: relative;
+    right: 25vw;
+}
+
+
+input {
+    border-radius: 5%;
+    border: none;
+}
+
+input:invalid {
+    border: red 1px solid
+}
+
+input:valid {
+    border: green 1px solid ;
 }
